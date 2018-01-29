@@ -47,7 +47,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setComponents()
     }
