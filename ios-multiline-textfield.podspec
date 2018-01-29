@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ios-multiline-textfield'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Multiline textfield is written in Swift 3 with a customizable line.'
 
   s.description      = <<-DESC
