@@ -1,8 +1,8 @@
 //
 //  MultilineTextField.swift
-//  ErstreamDemo
 //
-//  Created by Erstream on 12/12/2017.
+//
+//  Created by Furkan Hatipoglu on 12/12/2017.
 //  Copyright © 2017 frknhatipoglu. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 import GrowingTextView
 
 public class MultilineTextField: UIView, GrowingTextViewDelegate {
-
+    
     
     private var titleLabel: UILabel!
     private var lineLayer: CALayer!
@@ -52,7 +52,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
         setComponents()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -94,7 +94,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
         growTextView.font = UIFont.systemFont(ofSize: 16)
         growTextView.returnKeyType = .done
         self.addSubview(growTextView)
-    
+        
     }
     
     private func setLineLayer () {
@@ -105,11 +105,11 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
         
     }
     
-    internal func textViewDidBeginEditing(_ textView: UITextView) {
+    public func textViewDidBeginEditing(_ textView: UITextView) {
         setTextIsNotNill()
     }
     
-    internal func textViewDidEndEditing(_ textView: UITextView) {
+    public func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
             setTextIsNill()
         } else {
@@ -135,7 +135,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
         }
     }
     
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if(text == "\n") {
             textView.resignFirstResponder()
             return false
