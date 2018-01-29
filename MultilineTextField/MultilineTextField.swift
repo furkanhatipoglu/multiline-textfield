@@ -9,7 +9,7 @@
 import Foundation
 import GrowingTextView
 
-class MultilineTextField: UIView, GrowingTextViewDelegate {
+public class MultilineTextField: UIView, GrowingTextViewDelegate {
 
     
     private var titleLabel: UILabel!

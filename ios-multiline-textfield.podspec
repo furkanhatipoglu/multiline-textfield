@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name             = 'MultilineTextField'
+  s.name             = 'ios-multiline-textfield'
   s.version          = '0.0.1'
   s.summary          = 'Multiline textfield is written in Swift 3 with a customizable line.'
 
   s.description      = <<-DESC
-                      Multiline textfield is written in Swift 3 with a customizable line.
+                      Multiline textfield is written in Swift 3 with a customizable line. Author is Furkan Hatipoglu.
                        DESC
 
   s.homepage         = 'https://github.com/furkanhatipoglu/multiline-textfield.git'
