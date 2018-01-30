@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name             = 'MultilineTextField'
-  s.version          = '0.0.1'
+  s.name             = 'MultiLineTextField'
+  s.version          = '0.1.0'
   s.summary          = 'Multiline textfield is written in Swift 3 with a customizable line.'
 
   s.description      = <<-DESC
-                      Multiline textfield is written in Swift 3 with a customizable line.
+                      Multiline textfield is written in Swift 3 with a customizable line. Author is Furkan Hatipoglu.
                        DESC
 
   s.homepage         = 'https://github.com/furkanhatipoglu/multiline-textfield.git'
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.dependency 'GrowingTextView', '~> 0.4.0'
 
   s.ios.deployment_target = '8.0'
-  s.resources             = 'MultilineTextField/*'
-  s.source_files          = 'MultilineTextField/*'
+  s.resources             = 'MultiLineTextField/*'
+  s.source_files          = 'MultiLineTextField/*'
 
 end
