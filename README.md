@@ -1,6 +1,6 @@
-# FHMultilineTextField
+# MultilineTextField
 
-FHMultilineTextField is a Android style textfield that supports multiline text. Moreover, FHMultilineTextField includes a seperator line and placeholder label.
+MultilineTextField is a Android style textfield that supports multiline text. Moreover, MultilineTextField includes a seperator line and placeholder label.
 
 <img src="DEMO.gif" border=1 style="border-color:#eeeeee">
 
@@ -14,8 +14,6 @@ Xcode 8
 ```
 
 ### Installing
-
-Installing with Pods
 
 Add this line on your Podfile file.
 
