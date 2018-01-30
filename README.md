@@ -1,17 +1,15 @@
 # MultilineTextField
 
-MultilineTextField is a Android style textfield that supports multiline text. Moreover, MultilineTextField includes a seperator line and placeholder label.
-
 <img src="DEMO.gif" border=1 style="border-color:#eeeeee">
+
+MultilineTextField is an Android style textfield that supports multiline text. Moreover, MultilineTextField includes a seperator line and placeholder label.
 
 ## Getting Started
 
 ### Prerequisites
 
-```
-Swift 3
-Xcode 8
-```
+- Swift 3
+- Xcode 8
 
 ### Installing
 
@@ -33,16 +31,16 @@ Don't forget the work on your .xcworkspace file.
 
 An example
 
-```
-        let multilineTextField = MultilineTextField(frame: CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 70))
-        multilineTextField.lineColorSelected = UIColor.red          // default is UIColor.darkGray
-        multilineTextField.lineColorUnselected = UIColor.black      // default is UIColor.darkGray
-        multilineTextField.placeHolderText = "Address:"
-        multilineTextField.placeHolderTextColor =  UIColor.black    // default is UIColor.darkGray
-        multilineTextField.textColor = UIColor.black                // default is UIColor.darkGray
-        multilineTextField.textView.returnKeyType = .done
-        multilineTextField.endEditingWithReturnButton = true        // default is false
-        view.addSubview(multilineTextField)
+```swift
+let multilineTextField = MultilineTextField(frame: CGRect(x: 20, y: 100, width: view.bounds.width - 40, height: 70))
+multilineTextField.lineColorSelected = UIColor.red          // default is UIColor.darkGray
+multilineTextField.lineColorUnselected = UIColor.black      // default is UIColor.darkGray
+multilineTextField.placeHolderText = "Address:"
+multilineTextField.placeHolderTextColor =  UIColor.black    // default is UIColor.darkGray
+multilineTextField.textColor = UIColor.black                // default is UIColor.darkGray
+multilineTextField.textView.returnKeyType = .done
+multilineTextField.endEditingWithReturnButton = true        // default is false
+view.addSubview(multilineTextField)
 ```
 ### To-Do
 
