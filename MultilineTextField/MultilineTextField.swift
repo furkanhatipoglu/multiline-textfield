@@ -28,11 +28,14 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
             updateTextColor()
         }
     }
-    public var lineColor: UIColor! = UIColor.darkGray {
+    public var lineColorUnselected: UIColor! = UIColor.darkGray {
         didSet {
-            self.lineLayer.backgroundColor = lineColor.cgColor
+            self.lineLayer.backgroundColor = lineColorUnselected.cgColor
         }
     }
+    
+    public var lineColorSelected: UIColor! = UIColor.darkGray
+    
     
     public var textColor: UIColor! = UIColor.darkGray {
         didSet {
@@ -112,7 +115,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
     private func setTextIsNotNill () {
         UIView.animate(withDuration: 0.5) {
             self.lineLayer.frame = CGRect(x: 0, y: self.lineLayer.frame.minY, width: self.lineLayer.bounds.width, height: 2)
-            self.lineLayer.backgroundColor = UIColor.darkGray.cgColor
+            self.lineLayer.backgroundColor = self.lineColorSelected.cgColor
             self.titleLabel.alpha = 1
             self.textView.placeHolderColor = self.placeHolderTextColor.withAlphaComponent(0)
         }
@@ -121,7 +124,7 @@ public class MultilineTextField: UIView, GrowingTextViewDelegate {
     private func setTextIsNill () {
         UIView.animate(withDuration: 0.5) {
             self.lineLayer.frame = CGRect(x: 0, y: self.lineLayer.frame.minY, width: self.lineLayer.bounds.width, height: 0.5)
-            self.lineLayer.backgroundColor = UIColor.darkGray.cgColor
+            self.lineLayer.backgroundColor = self.lineColorUnselected.cgColor
             self.titleLabel.alpha = 0
             self.textView.placeHolderColor = self.placeHolderTextColor
         }

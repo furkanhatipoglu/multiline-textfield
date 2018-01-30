@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'MultiLineTextField'
+  s.name             = 'FHMultilineTextField'
   s.version          = '0.1.0'
   s.summary          = 'Multiline textfield is written in Swift 3 with a customizable line.'
 
